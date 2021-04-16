@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed"
 
+const string = ['Web Deisgn', 'Web Development', 'MERN Developer', 'Tech Enthusiast'];
 
 const Header = () => {
     return (
@@ -9,7 +10,7 @@ const Header = () => {
                 <h1>Software Engineer</h1>
                 <Typed
                     className="typed-text"
-                    strings={['Web Deisgn', 'Web Development', 'MERN Developer', 'Tech Enthusiast']}
+                    strings={string}
                     typeSpeed={40}
                     backSpeed={60}
                     loop

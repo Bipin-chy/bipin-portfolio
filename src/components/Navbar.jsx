@@ -19,11 +19,11 @@ function Navbar() {
           <a className="nav-link active" aria-current="page">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About me</a>
+          <a className="nav-link" href="#about">About me</a>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="#">Services</a>
+          <a className="nav-link" href="#service">Services</a>
         </li>
 
         <li className="nav-item">
