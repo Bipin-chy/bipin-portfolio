@@ -5,13 +5,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import {Switch, Route} from "react-router-dom";
+import {BrowserRouter as Switch, Route} from "react-router-dom";
 import Home from './components/Home';
 import AboutPage from './Pages/AboutPage';
 import ServicePage from './Pages/ServicePage';
 import ProjectPage from './Pages/ProjectPage';
 
-
+import {  } from "react-router-dom";
 
 function App() {
 
@@ -22,7 +22,6 @@ function App() {
     <>
     <Navbar/>
       <Switch>
-      
           <Route path="/" component={Home} exact></Route>
           <Route path="/about" component={AboutPage} exact></Route>
           <Route path="/services" component={ServicePage} exact></Route>
