@@ -7,11 +7,11 @@ const About = () => {
       <div className="container">
         <div className="row">
 
-        <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div data-aos="fade-up" className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <img src={webDeveloper} alt="web developer" style={{width:"80%"}}/>
           </div>
 
-          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12" style={{marginTop:"2rem"}}>
+          <div data-aos="fade-up" className="col-lg-6 col-md-12 col-sm-12 col-xs-12" style={{marginTop:"2rem"}}>
             <h1>About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure

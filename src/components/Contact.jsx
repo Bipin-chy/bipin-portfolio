@@ -4,13 +4,13 @@ const Contact = () => {
   return (
     <div className="contact section">
       <div className="container">
-        <h1>Contact me</h1>
-        <p>
+        <h1 data-aos="fade-up">Contact me</h1>
+        <p data-aos="fade-up">
           Please fill out the form and describe your project you need and I'll
           contact you as soon as possible
         </p>
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div data-aos="fade-up" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div className="form-input">
               <div className="input">
                 <input
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div data-aos="fade-up" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="input-group">
               
               <textarea
@@ -60,7 +60,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <button className="btn btn-primary btn-lg my-3">Contact me</button>
+        <button data-aos="fade-up" className="btn btn-primary btn-lg my-3">Contact me</button>
       </div>
     </div>
   );

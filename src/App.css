@@ -5,26 +5,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 :root{
     --primary-white: #fff;
     --primary-orange: #f9ab00;
-    --primary-dark:rgba(255,255,255,0);
+    --primary-dark:#343a40;
+    --primary-lightDark:#363d44;
     --primary-gray:rgb(128,128,1278);
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
+    --primary-blue:#2b2e4a;
+
 }
+
+.banner{
+    background: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--primary-white);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 .container{
     text-align: -moz-center;
 }
 
 h1{
-    color: var(--primary-orange);
+    color: var(--primary-white);
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 2rem;
+    z-index: inherit;
 }
 
 .section{
@@ -65,15 +85,18 @@ nav ul li {
 /* *************************** Header ***************************** */
 
 .header-wraper{
-    position: relative;
-    background: url("photo-1499750310107-5fef28a66643.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+    /* position: relative; */
+    /* background: url("photo-1499750310107-5fef28a66643.jpg") no-repeat; */
+    
     height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.header-wraper h1{
+    color: var(--primary-blue);
 }
 
 .main-info{
@@ -84,22 +107,27 @@ nav ul li {
     text-align: center;
     height: 92vh;
     width: 100%;
-    background: rgba(0 ,0,0,0.5);
     background-size: cover;
     z-index: 1;
+    position: relative;
 
 }
 
-
-
-
+.video{
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+}
 
 
 /* *************************** typed text ***************************** */
 
 .typed-text{
     font-size: 2rem;
-    color: var(--primary-white);
+    color: var(--primary-lightDark) !important;
+    z-index: 2;
 }
 
 /* *************************** btn-main-offer ***************************** */
@@ -110,7 +138,8 @@ nav ul li {
     border-radius: 2px;
     text-transform: uppercase;
     margin: 2rem;
-    color: var(--primary-white);
+    color: var(--primary-dark);
+    z-index: 2;
 }
 
 .btn-main-offer:hover{
@@ -127,10 +156,15 @@ nav ul li {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* *************************** About section ***************************** */
+
+.About-me{
+    background-color: var(--primary-lightDark);
+    color: var(--primary-white);
+}
 
 .About-me p{
     text-align: justify;
@@ -140,7 +174,9 @@ nav ul li {
 /* *************************** Services section ***************************** */
 
 .Services{
-    background-color: var(--primary-gray);
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+    
 }
 
 .Services h1{
@@ -161,8 +197,11 @@ nav ul li {
     cursor: pointer;
 }
 
-.card-body p {
+
+
+.card-body p, h5 {
     text-align: justify;
+    color: var(--primary-lightDark);
 }
 
 .card:hover{
@@ -175,7 +214,8 @@ nav ul li {
 /* *************************** project section ***************************** */
 
 .my-project{
-    background-color: var(--primary-gray);
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
 }
 
 .my-project h1{
@@ -185,6 +225,11 @@ nav ul li {
 
 /* *************************** contact section ***************************** */
 
+.contact{
+    background-color: var(--primary-lightDark);
+    color: var(--primary-white);
+}
+
 .contact .row{
     margin-top: 2.5rem;
 }
@@ -193,6 +238,7 @@ input{
     outline: none;
     border: none;
     width: 100%;
+    background-color: transparent;
 }
 
 textarea{
@@ -212,7 +258,7 @@ textarea{
 /*********************************footer section **************************/
 .footer{
     padding-top: 80px;
-    background-color: var(--primary-gray);
+    background-color: var(--primary-dark);
     color: var(--primary-white);
     /* padding-bottom: 20px; */
 }
@@ -248,4 +294,19 @@ textarea{
     display: flex;
     justify-content: center;
     padding-top: 20px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .header-wraper{
+        background: url("photo-1499750310107-5fef28a66643.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-size: contain; */
+    }
+
+    .video{
+        display: none;
+    }
 }

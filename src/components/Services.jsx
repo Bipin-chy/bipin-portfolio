@@ -4,6 +4,7 @@ import UX from "./uxDesign.png";
 import mern from "./shuttle.png";
 import web from "./www.png";
 
+
 const servicesIcon = [
     {
         img: UX,
@@ -23,14 +24,18 @@ const servicesIcon = [
 ]
 
 const Services = () => {
+
+    
+
     return (
-        <div className="section Services" id="service">
+        <div  className="section Services" id="service">
                 <div className="container">
-                    <h1>Services</h1>
+                    <h1 data-aos="fade-up">Services</h1>
                     <div className="row">
 
                         {servicesIcon.map(service=>(
-                            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div data-aos="fade-up"
+                             className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                                 <div className="card" style={{width:"18rem"}}>
                                     <img src={service.img} className="card-img-top" style={{width:"4rem"}} alt={service.title}/>
                                     <div className="card-body">
