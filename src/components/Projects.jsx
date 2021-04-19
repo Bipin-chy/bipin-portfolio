@@ -4,9 +4,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 
-import project1 from "./project1.jpeg";
-import project2 from "./project2.jpg";
-import project3 from "./project3.jpg";
+import project1 from "../Images/project1.jpeg";
+
 
 const projects = [
     {

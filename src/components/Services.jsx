@@ -1,8 +1,8 @@
 import React from 'react';
 
-import UX from "./uxDesign.png";
-import mern from "./shuttle.png";
-import web from "./www.png";
+import UX from "../Images/uxDesign.png";
+import mern from "../Images/shuttle.png";
+import web from "../Images/www.png";
 
 
 const servicesIcon = [

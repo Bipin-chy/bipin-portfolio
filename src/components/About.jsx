@@ -1,5 +1,5 @@
 import React from "react";
-import webDeveloper from "./webDeveloper.svg";
+import webDeveloper from "../Images/webDeveloper.svg";
 
 const About = () => {
   return (

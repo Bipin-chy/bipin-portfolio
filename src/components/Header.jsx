@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import video from "../production.mp4";
 
@@ -17,7 +18,7 @@ const Header = () => {
                     backSpeed={60}
                     loop
                 />
-                <a className="btn-main-offer" href="#">Contact me</a>
+                <Link className="btn-main-offer" href="#contact">Contact me</Link>
             </div>
         </div>
     )

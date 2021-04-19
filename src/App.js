@@ -7,9 +7,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import {Switch, Route} from "react-router-dom";
 import Home from './components/Home';
-import AboutPage from './components/AboutPage';
-import ServicePage from './components/ServicePage';
-import ProjectPage from './components/ProjectPage';
+import AboutPage from './Pages/AboutPage';
+import ServicePage from './Pages/ServicePage';
+import ProjectPage from './Pages/ProjectPage';
 
 
 
@@ -20,8 +20,9 @@ function App() {
   }, []);
   return (
     <>
-     <Navbar/>
+    <Navbar/>
       <Switch>
+      
           <Route path="/" component={Home} exact></Route>
           <Route path="/about" component={AboutPage} exact></Route>
           <Route path="/services" component={ServicePage} exact></Route>
